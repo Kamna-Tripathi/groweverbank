@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #000;
+    position:sticky;
+}
+
+ul { list-style-type: none;}
+
+ul li { 
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+ }
+
+ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16pt;
+    text-decoration: none;
+    text-align: center;
+    padding: 12.7px 12.7px;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+.home, .services, .products, .pricing, .team, .careers, .about, .contact {
+    background-size: 100% 200%;
+    transition: background-position 1s;
+} 
+
+.home:hover, .services:hover, .products:hover, .pricing:hover, .team:hover, .careers:hover, .about:hover, .contact:hover {
+    background-position: 0 100%;
+    transition: all .6s ease-in;
+}
+
+.home { 
+    border-bottom: 5px solid orange;
+    background-image: linear-gradient(to top, orange 50%, black 50%);
+
+} 
+.home:hover {background-color: orange;} 
+
+.services {
+    border-bottom: 5px solid coral;
+    background-image: linear-gradient(to top, coral 50%, black 50%);
+}
+.services:hover { background-color: coral;}
+
+
+.products {
+    border-bottom: 5px solid #FE3E00;
+    background-image: linear-gradient(to top, #FE3E00 50%, black 50%);
+}
+.products:hover { background-color: #FE3E00;}
+
+.pricing {
+    border-bottom: 5px solid #922b3e;
+    background-image: linear-gradient(to top, #922b3e 50%, black 50%);
+}
+.pricing:hover { background-color: #922b3e;}
+
